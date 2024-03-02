@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "woodpecker"
+version = "0.1.0"
+description = "CLI Project management tool for keeping projects neat and tidy"
+authors = ["adriftible <157880007+adriftible@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+woodpecker = "woodpecker.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.0"
+typer = {extras = ["all"], version = "^0.1.0"}
+pyyaml = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
